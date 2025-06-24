@@ -1,0 +1,367 @@
+export const NavElements : string[] = ["About", "Gallery" ,"Skills", "Projects"  , "Contacts" ]
+export const name :string = "Dalel"
+export const lastname : string ="Ammar"
+export const phoneNumber : string = "50 514 247"
+export const email : string = "ammardalel07@gmail.com"
+export const portfolioImageURL : string = "/dalel.jpeg"
+export const abreviation : string = "AD"
+export const aboutTitle : string = "About Me"
+export const Aboutparagraphe: string = " I'm Dalel Ammar, a passionate software engineering student with a strong interest in web development. \
+        I love creating modern, responsive, and user-friendly websites. \
+        I’m constantly learning and exploring new technologies to build better and smarter digital experiences."
+
+
+interface Skill {
+  name: string
+  percentage: number
+  icon: string
+  color: string
+}
+export const skills: Skill[] = [
+  {
+    name: "Javascript",
+    percentage: 70,
+    icon: "📜", 
+    color: "from-orange-500 to-red-500",
+  },
+   {
+    name: "Typescript",
+    percentage: 60,
+    icon: "📘", 
+    color: "from-orange-500 to-red-500",
+  },
+   {
+    name: "React js",
+    percentage: 75,
+    icon: "⚛️", 
+    color: "from-orange-500 to-red-500",
+  },
+  {
+    name: "Node js",
+    percentage: 60,
+    icon: "🌿", 
+    color: "from-orange-500 to-red-500",
+  },
+  {
+    name: "Express js",
+    percentage: 60,
+    icon: "🚂", 
+    color: "from-orange-500 to-red-500",
+  },
+    {
+    name: "Next js",
+    percentage: 30,
+    icon: "⏭️",
+    color: "from-orange-500 to-red-500",
+  },
+  {
+    name: "Mobile App",
+    percentage: 30,
+    icon: "📱",
+    color: "from-orange-500 to-red-500",
+  },
+  {
+    name: "DB : Mysql , MongoDB",
+    percentage: 60,
+    icon: "🛢️",
+    color: "from-orange-500 to-red-500",
+  },
+  {
+    name: "Git , GitHub",
+    percentage: 50,
+    icon: "🔧",
+    color: "from-orange-500 to-red-500",
+  },
+  {
+    name: "Docker",
+    percentage: 40,
+    icon: "🐳", 
+    color: "from-orange-500 to-red-500",
+  },
+  {
+    name: "Cloud Computing",
+    percentage: 20,
+    icon: "☁️",
+    color: "from-orange-500 to-red-500",
+  },
+  {
+    name: "Figma",
+    percentage: 20,
+    icon: "🎨", 
+    color: "from-orange-500 to-red-500",
+  },
+  {
+    name: "Problem Solving",
+    percentage: 70,
+    icon: "🧠",
+    color: "from-orange-500 to-red-500",
+  },
+];
+
+export const titleWhiteSkills : string = "My"
+export const titleOrangeSkills  : string = "Skills"
+export interface Event {
+  id: number
+  title: string
+  date: string
+  location: string
+  description: string
+  images: string[]
+}
+
+export const paragraphGallery : string =" Here are some of the amazing events, conferences,\
+                                      and workshops I've been part of, sharing knowledge and\
+                                      connecting with the community."
+export const titleWhiteEvents : string = "Events I've"
+export const titleOrangeEvents : string = "Participated"
+
+
+export const events: Event[] = [
+  {
+    id: 1,
+    title: "Violence Detection System – TWISE Night",
+    date: "2025",
+    location: "ISIMM, Monastir",
+    description:
+      "Developed a smart surveillance system to detect violence using YOLOv8, MediaPipe, and posture/movement analysis. Worked with a fantastic team and presented the project at TWISE Night.",
+    images: [
+      "Twise_night1.jpg?height=300&width=400",
+      "Twise_night2.jpg?height=300&width=400&text=Collaboration",
+      "Twise_night3.jpg?height=300&width=400&text=Design Systems",
+    ],
+  },
+  {
+    id: 2,
+    title: "Science Month Jury – ARSII & AMED",
+    date: "May 2025",
+    location: "AMED Sahloul School, Sousse",
+    description:
+      "Served as a jury member during the Science Festival. Evaluated projects in robotics and AI presented by young students. Celebrated innovation and promoted STEM education with ARSII and AMED.",
+    images: [
+      "/Amad_event1.jpg?height=300&width=400",
+      "/Amad_event2.jpg?height=300&width=400&text=Collaboration",
+      "/Amad_event3.jpg?height=300&width=400&text=Design Systems",
+      "/Amad_event4.jpg?height=300&width=400&text=Design Systems",
+    ],
+  },
+  {
+    id: 3,
+    title: "IT Impact - Marketing Assistant – ARSII Club",
+    date: "April-2025",
+    location: "ISIMM, Monastir",
+    description:
+      "Worked as Marketing Assistant at ARSII Club ISIMM. Led communication strategies, created visual content, and contributed to IT Impact v1.0 event. Gained hands-on experience in graphic design and team collaboration.",
+    images: [
+      "/It_Impact1.jpg?height=300&width=400",
+      "/It_Impact2.jpg?height=300&width=400&text=Collaboration",
+      "/It_Impact3.jpg?height=300&width=400&text=Design Systems",
+      "/It_Impact4.jpg?height=300&width=400",
+      "/It_Impact5.jpg?height=300&width=400&text=Collaboration",
+      "/It_Impact6.jpg?height=300&width=400&text=Design Systems",
+    ],
+  },
+  {
+    id: 4,
+    title: "Web Dev Training – ARSII Club",
+    date: "Jan–Feb 2025",
+    location: "ISIMM, Monastir",
+    description:
+      "Trainer at two web development sessions with ARSII Club ISIMM: Basics of HTML, CSS & JavaScript (Jan 29) and Portfolio mini-project (Feb 1). Helped participants build their first personal websites.",
+    images: [
+      "/dev_session1.jpg?height=300&width=400",
+      "/dev_session2.jpg?height=300&width=400&text=Collaboration",
+    ],
+  },
+  {
+    id: 5,
+    title: "CSHack 2024 – IEEE ISIMM",
+    date: "March 2024",
+    location: "ISIMM, Monastir",
+    description:
+      "Participated in CSHack, organized by IEEE Computer Society Chapter – ISIMM. Attended workshops on problem solving 💡 and cyber security 🔒. A valuable opportunity to deepen my skills and learn alongside experts.",
+    images: [
+      "/cshack1.jpg?height=300&width=400",
+      "/cshack2.jpg?height=300&width=400&text=Collaboration",
+    ],
+  },
+];
+
+
+export interface Project {
+  id: number
+  title: string
+  description: string
+  longDescription: string
+  category: string
+  technologies: string[]
+  images: string[]
+  demoUrl?: string
+  githubUrl?: string
+  featured: boolean
+}
+
+
+export const projects: Project[] = [
+  {
+    id: 1,
+    title: "Educational Website",
+    description: "Interactive e‑learning platform built freelance",
+    longDescription:
+      "Developed an interactive educational platform as a freelancer. Features include performance optimization, responsive design, and containerization with Docker. Tech stack: JavaScript, React.js, Node.js, Express.js, MySQL.",
+    category: "Web Development",
+    technologies: ["React.js", "Node.js", "Express.js", "MySQL", "Docker"],
+    images: [
+      "/jaweherkouloub1.png?height=300&width=500&text=Educational+Home",
+      "/jaweherkouloub2.png?height=300&width=500&text=Interactive+Features",
+      "/jaweherkouloub3.png"
+    ],
+
+    demoUrl: "https://tadaglobe.com/",
+    featured: true,
+  },
+   {
+    id: 2,
+    title: "Personal Portfolio",
+    description: "Showcasing projects and skills",
+    longDescription:
+      "Developed several personal portfolio sites to highlight projects, skills, and background. Built with React.js or plain HTML/CSS/JS, fully responsive and well‑structured.",
+    category: "Web Design",
+    technologies: ["React.js", "HTML", "CSS", "JavaScript"],
+    images: [
+      "/myportfolio1.png?height=300&width=500&text=Portfolio+Home",
+      "/myportfolio2.png?height=300&width=500&text=Projects+Section",
+      "/myportfolio3.png",
+      "/myportfolio4.png"
+    ],
+    demoUrl: "https://ammardalel.github.io/deploymentportfolio/",
+    githubUrl: "https://github.com/AmmarDalel",
+    featured: false,
+  },
+  //Figma design
+
+    {
+    id: 3,
+    title: "Recycling app",
+    description: "Figma design",
+    longDescription:
+      "",
+    category: "Web Design",
+    technologies: ["Figma"],
+    images: [
+      "/recycling_app1.png",
+      "/recycling_app2.png",
+      "/recycling_app3.png",
+      "/recycling_app4.png",
+      "/recycling_app5.png"
+    ],
+    featured: false,
+  },
+  {
+    id: 3,
+    title: "MERN Auth System",
+    description: "User & admin roles with JWT‑secure authentication",
+    longDescription:
+      "Built a full authentication system using MongoDB, Express.js, React.js, Node.js. Integrated Redux for state management, Passport.js, and JWT for secure authentication, with support for multiple roles (admin, user).",
+    category: "Web Development",
+    technologies: ["MongoDB", "Express.js", "React.js", "Node.js", "Redux", "Passport.js", "JWT"],
+    images: [
+     
+    ],
+    featured: false,
+  },
+  {
+    id: 4,
+    title: "Travel Agency Website",
+    description: "Interactive landing page built with React.js",
+    longDescription:
+      "Created a showcase site for a travel agency featuring a dynamic and visually appealing landing page. UI design inspired by modern trends, implemented in React.js for client‑side interactivity.",
+    category: "Web Design",
+    technologies: ["React.js", "CSS", "JavaScript"],
+    images: [
+      "/flivan.png?height=300&width=500&text=Travel+Home",
+    ],
+    githubUrl:"https://github.com/AmmarDalel/flivain-React-js",
+    featured: false,
+  },
+  {
+    id: 5,
+    title: "Product CRUD App",
+    description: "Simple product management system in JavaScript",
+    longDescription:
+      "A product management app featuring basic CRUD operations (Create, Read, Update, Delete), implemented with vanilla HTML, CSS, and JavaScript. Intuitive interface for administering product data.",
+    category: "Web Development",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    images: [
+      "/cruds app.png?height=300&width=500&text=Product+List",
+    ],
+    githubUrl:"https://github.com/AmmarDalel/CRUDS_JS",
+    featured: false,
+  },
+  {
+    id: 6,
+    title: "Virtual Meetings App",
+    description: "Real‑time messaging and calls using WebRTC",
+    longDescription:
+      "A web application for virtual meetings built with React.js, Node.js, Express.js (TypeScript), and MongoDB. It supports real-time communication via WebRTC and clean front‑end/back‑end architecture. Developed during my internship at Infinity Management.",
+    category: "Web Development",
+    technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "TypeScript", "WebRTC"],
+    images: [
+      "/Meetapp2.png?height=300&width=500&text=Home+Page",
+      "/Meetapp1.png?height=300&width=500&text=Meeting+Room",
+      "/Meetapp3.png",
+      "/Meetapp4.png",
+      "/Meetapp5.png",
+      "/Meetapp6.png",
+    ],
+    
+    featured: true,
+  },
+  
+
+ 
+  {
+    id:7,
+    title:"AD Print App",
+    description:'',
+    longDescription:"",
+    category:"Web Design",
+    technologies:["React.js", "HTML", "CSS", "TypeScript"],
+     images: [
+      "/ADPrint1.png",
+      "/ADPrint2.png",
+       "/ADPrint3.png",
+      "/ADPrint4.png",
+       "/ADPrint5.png",
+      
+    ],
+    githubUrl: "https://github.com/AmmarDalel/ADprint/",
+    featured: false,
+  }
+]
+
+export const categories = ["All", "Web Development", "Mobile App", "Design", "Web Design"]
+
+export const titleWhiteProjects : string = "My"
+export const titleOrangeProjects : string = "Projects"
+
+export const paragraphProjects : string ="Here's a showcase of my recent work, featuring web applications, mobile apps, and design projects that\
+        demonstrate my skills and creativity."
+
+//footer 
+export const quickLinks = [
+    { name: "About", href: "#about" },
+    { name: "Skills", href: "#skills" },
+    { name: "Projects", href: "#projects" },
+    { name: "Gallery", href: "#gallery" },
+  ]
+
+export const socialLinks = [
+    { name: "LinkedIn", href: "https://www.linkedin.com/in/dalel-ammar-b0544a234/" },
+    { name: "GitHub", href: "https://github.com/AmmarDalel" },
+    { name: "Instagram", href: "https://www.instagram.com/dalel.ammar/" },
+    { name: "Facebook", href: "https://www.facebook.com/dalel.ammar.961" },
+
+  ]
+
+export const year : string = '2025'
+

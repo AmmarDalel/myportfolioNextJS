@@ -1,3 +1,7 @@
+import { TbBrandJavascript,TbBrandTypescript  ,TbCloudComputing,TbDeviceMobile } from "react-icons/tb";
+import { RiReactjsLine , RiNodejsLine, RiNextjsFill , RiDatabase2Fill, RiGithubFill  } from "react-icons/ri";
+import { SiDocker, SiExpress, SiFigma, SiMinds } from "react-icons/si";
+
 export const NavElements : string[] = ["About", "Gallery" ,"Skills", "Projects"  , "Contacts" ]
 export const name :string = "Dalel"
 export const lastname : string ="Ammar"
@@ -10,91 +14,77 @@ export const Aboutparagraphe: string = " I'm Dalel Ammar, a passionate software 
         I love creating modern, responsive, and user-friendly websites. \
         I’m constantly learning and exploring new technologies to build better and smarter digital experiences."
 
-
 interface Skill {
-  name: string
-  percentage: number
-  icon: string
-  color: string
+  name: string;
+  percentage: number;
+  icon: React.ReactElement;
 }
+
 export const skills: Skill[] = [
   {
     name: "Javascript",
     percentage: 70,
-    icon: "📜", 
-    color: "from-orange-500 to-red-500",
+    icon: <TbBrandJavascript color="orange" />,
   },
-   {
+  {
     name: "Typescript",
     percentage: 60,
-    icon: "📘", 
-    color: "from-orange-500 to-red-500",
+    icon: <TbBrandTypescript color="orange"  />,
   },
-   {
+  {
     name: "React js",
     percentage: 75,
-    icon: "⚛️", 
-    color: "from-orange-500 to-red-500",
+    icon: <RiReactjsLine color="orange" />,
   },
   {
     name: "Node js",
     percentage: 60,
-    icon: "🌿", 
-    color: "from-orange-500 to-red-500",
+    icon: <RiNodejsLine color="orange"  />,
   },
   {
     name: "Express js",
     percentage: 60,
-    icon: "🚂", 
-    color: "from-orange-500 to-red-500",
+    icon: <SiExpress  color="orange" />,
   },
-    {
+  {
     name: "Next js",
     percentage: 30,
-    icon: "⏭️",
-    color: "from-orange-500 to-red-500",
+    icon: <RiNextjsFill color="orange"  />,
   },
   {
     name: "Mobile App",
     percentage: 30,
-    icon: "📱",
-    color: "from-orange-500 to-red-500",
+    icon: <TbDeviceMobile color="orange"  />,
   },
   {
     name: "DB : Mysql , MongoDB",
     percentage: 60,
-    icon: "🛢️",
-    color: "from-orange-500 to-red-500",
+    icon: <RiDatabase2Fill color="orange"  />,
   },
   {
     name: "Git , GitHub",
     percentage: 50,
-    icon: "🔧",
-    color: "from-orange-500 to-red-500",
+    icon: <RiGithubFill color="orange" />,
   },
   {
     name: "Docker",
     percentage: 40,
-    icon: "🐳", 
-    color: "from-orange-500 to-red-500",
+    icon: <SiDocker color="orange" />,
   },
   {
     name: "Cloud Computing",
     percentage: 20,
-    icon: "☁️",
-    color: "from-orange-500 to-red-500",
+    icon: <TbCloudComputing color="orange" />,
   },
   {
     name: "Figma",
     percentage: 20,
-    icon: "🎨", 
-    color: "from-orange-500 to-red-500",
+    icon: <SiFigma color="orange" />,
   },
   {
     name: "Problem Solving",
     percentage: 70,
-    icon: "🧠",
-    color: "from-orange-500 to-red-500",
+    icon: <SiMinds color="orange" />,
   },
 ];
 
@@ -265,7 +255,7 @@ export const projects: Project[] = [
     category: "Web Development",
     technologies: ["MongoDB", "Express.js", "React.js", "Node.js", "Redux", "Passport.js", "JWT"],
     images: [
-     
+     "/MERN_Auth.png"
     ],
     featured: false,
   },

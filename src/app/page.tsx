@@ -9,7 +9,7 @@ import { Footer } from "@/components/Footer/Footer";
 export default function Home() {
   return (
   <>
-    <BackgroundBeamsWithCollision className="relative h-[100vh] overflow-hidden z-0">
+    <BackgroundBeamsWithCollision  className="min-h-screen">
         <Main /> 
     </BackgroundBeamsWithCollision>
     <Gallery/>

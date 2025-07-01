@@ -30,7 +30,7 @@ export default function RootLayout({
     <html lang="en">
       
       <body
-        className="min-h-screen bg-slate-900 text-white"
+        className="h-[100vh] bg-slate-900 text-white"
       >
           <Navbar/>
           {children}

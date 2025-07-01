@@ -12,7 +12,7 @@ function Navbar() {
 
          <div className="hidden md:flex items-center space-x-8">
           {NavElements.map((e, index) => (
-            <Link key={index} href={`/${e.toLowerCase()}`} className="text-gray-300 hover:text-white transition-colors">
+            <Link key={index} href={`#${e.toLowerCase()}`} className="text-gray-300 hover:text-white transition-colors">
               {e}
             </Link>
           ))}

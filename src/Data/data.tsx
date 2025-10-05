@@ -1,18 +1,36 @@
-import { TbBrandJavascript,TbBrandTypescript  ,TbCloudComputing,TbDeviceMobile } from "react-icons/tb";
-import { RiReactjsLine , RiNodejsLine, RiNextjsFill , RiDatabase2Fill, RiGithubFill  } from "react-icons/ri";
+import {
+  TbBrandJavascript,
+  TbBrandTypescript,
+  TbCloudComputing,
+  TbDeviceMobile,
+} from "react-icons/tb";
+import {
+  RiReactjsLine,
+  RiNodejsLine,
+  RiNextjsFill,
+  RiDatabase2Fill,
+  RiGithubFill,
+} from "react-icons/ri";
 import { SiDocker, SiExpress, SiFigma, SiMinds } from "react-icons/si";
 
-export const NavElements : string[] = ["About", "Gallery" ,"Skills", "Projects"  , "Contacts" ]
-export const name :string = "Dalel"
-export const lastname : string ="Ammar"
-export const phoneNumber : string = "50 514 247"
-export const email : string = "ammardalel07@gmail.com"
-export const portfolioImageURL : string = "/dalel.jpeg"
-export const abreviation : string = "AD"
-export const aboutTitle : string = "About Me"
-export const Aboutparagraphe: string = " I'm Dalel Ammar, a passionate software engineering student with a strong interest in web development. \
+export const NavElements: string[] = [
+  "About",
+  "Gallery",
+  "Skills",
+  "Projects",
+  "Contacts",
+];
+export const name: string = "Dalel";
+export const lastname: string = "Ammar";
+export const phoneNumber: string = "50 514 247";
+export const email: string = "ammardalel07@gmail.com";
+export const portfolioImageURL: string = "/dalel.jpeg";
+export const abreviation: string = "AD";
+export const aboutTitle: string = "About Me";
+export const Aboutparagraphe: string =
+  " I'm Dalel Ammar, a passionate software engineering student with a strong interest in web development. \
         I love creating modern, responsive, and user-friendly websites. \
-        I’m constantly learning and exploring new technologies to build better and smarter digital experiences."
+        I’m constantly learning and exploring new technologies to build better and smarter digital experiences.";
 
 interface Skill {
   name: string;
@@ -24,87 +42,87 @@ export const skills: Skill[] = [
   {
     name: "Javascript",
     percentage: 70,
-    icon: <TbBrandJavascript color="orange" />,
+    icon: <TbBrandJavascript color='orange' />,
   },
   {
     name: "Typescript",
     percentage: 60,
-    icon: <TbBrandTypescript color="orange"  />,
+    icon: <TbBrandTypescript color='orange' />,
   },
   {
     name: "React js",
     percentage: 75,
-    icon: <RiReactjsLine color="orange" />,
+    icon: <RiReactjsLine color='orange' />,
   },
   {
     name: "Node js",
     percentage: 60,
-    icon: <RiNodejsLine color="orange"  />,
+    icon: <RiNodejsLine color='orange' />,
   },
   {
     name: "Express js",
     percentage: 60,
-    icon: <SiExpress  color="orange" />,
+    icon: <SiExpress color='orange' />,
   },
   {
     name: "Next js",
     percentage: 30,
-    icon: <RiNextjsFill color="orange"  />,
+    icon: <RiNextjsFill color='orange' />,
   },
   {
     name: "Mobile App",
     percentage: 30,
-    icon: <TbDeviceMobile color="orange"  />,
+    icon: <TbDeviceMobile color='orange' />,
   },
   {
     name: "DB : Mysql , MongoDB",
     percentage: 60,
-    icon: <RiDatabase2Fill color="orange"  />,
+    icon: <RiDatabase2Fill color='orange' />,
   },
   {
     name: "Git , GitHub",
     percentage: 50,
-    icon: <RiGithubFill color="orange" />,
+    icon: <RiGithubFill color='orange' />,
   },
   {
     name: "Docker",
     percentage: 40,
-    icon: <SiDocker color="orange" />,
+    icon: <SiDocker color='orange' />,
   },
   {
     name: "Cloud Computing",
     percentage: 20,
-    icon: <TbCloudComputing color="orange" />,
+    icon: <TbCloudComputing color='orange' />,
   },
   {
     name: "Figma",
     percentage: 20,
-    icon: <SiFigma color="orange" />,
+    icon: <SiFigma color='orange' />,
   },
   {
     name: "Problem Solving",
     percentage: 70,
-    icon: <SiMinds color="orange" />,
+    icon: <SiMinds color='orange' />,
   },
 ];
 
-export const titleWhiteSkills : string = "My"
-export const titleOrangeSkills  : string = "Skills"
+export const titleWhiteSkills: string = "My";
+export const titleOrangeSkills: string = "Skills";
 export interface Event {
-  id: number
-  title: string
-  date: string
-  location: string
-  description: string
-  images: string[]
+  id: number;
+  title: string;
+  date: string;
+  location: string;
+  description: string;
+  images: string[];
 }
 
-export const paragraphGallery : string =" Here are some of the amazing events, conferences,\
+export const paragraphGallery: string =
+  " Here are some of the amazing events, conferences,\
                                       and workshops I've been part of, sharing knowledge and\
-                                      connecting with the community."
-export const titleWhiteEvents : string = "Events I've"
-export const titleOrangeEvents : string = "Participated"
-
+                                      connecting with the community.";
+export const titleWhiteEvents: string = "Events I've";
+export const titleOrangeEvents: string = "Participated";
 
 export const events: Event[] = [
   {
@@ -176,22 +194,56 @@ export const events: Event[] = [
   },
 ];
 
-
 export interface Project {
-  id: number
-  title: string
-  description: string
-  longDescription: string
-  category: string
-  technologies: string[]
-  images: string[]
-  demoUrl?: string
-  githubUrl?: string
-  featured: boolean
+  id: number;
+  title: string;
+  description: string;
+  longDescription: string;
+  category: string;
+  technologies: string[];
+  images: string[];
+  demoUrl?: string;
+  githubUrl?: string;
+  featured: boolean;
 }
 
-
 export const projects: Project[] = [
+  {
+    id: 0,
+    title: "Baniera Platform",
+    description: "Full-stack advertising management platform",
+    longDescription:
+      "Developed during my internship, Baniera is an innovative platform for centralized management and distribution of advertising banners and carousels. It allows advertisers and website managers to create, schedule, and deliver their visual content with full control. Key features include client management, image upload and cropping, scheduling with calendar, iframe generation for integration, an analytics dashboard with key metrics (views, clicks), as well as a notification and billing system. The architecture is built on Next.js full-stack with tRPC, Prisma, and PostgreSQL, ensuring end-to-end type safety and optimized performance.\n\nThe codebase is well-structured following a scalable architecture with dedicated folders: features (business features), components (reusable UI components), validation (schemas and validation rules), services (business logic), hooks (custom React hooks), and utils (utility functions). This structure improves maintainability, readability, and code reusability.",
+    category: "Web Development",
+    technologies: [
+      "Next.js",
+      "React.js",
+      "tRPC",
+      "PostgreSQL",
+      "Drizzle",
+      "NextAuth.js",
+    ],
+    images: [
+      "/baniera8.png?height=300&width=500&text=Dashboard",
+      "/baniera1.png?height=300&width=500&text=Banner+Management",
+      "/baniera2.png?height=300&width=500&text=Analytics",
+      "/baniera3.png?height=300&width=500&text=Analytics",
+      "/baniera4.png?height=300&width=500&text=Banner+Management",
+      "/baniera5.png?height=300&width=500&text=Banner+Management",
+      "/baniera6.png?height=300&width=500&text=Analytics",
+      "/baniera7.png?height=300&width=500&text=Analytics",
+      "/baniera8.png?height=300&width=500&text=Banner+Management",
+      "/baniera9.png?height=300&width=500&text=Banner+Management",
+      "/baniera10.png?height=300&width=500&text=Analytics",
+      "/baniera11.png?height=300&width=500&text=Analytics",
+      "/baniera12.png?height=300&width=500&text=Banner+Management",
+      "/baniera13.png?height=300&width=500&text=Banner+Management",
+      "/baniera14.png?height=300&width=500&text=Analytics",
+      "/baniera15.png?height=300&width=500&text=Analytics",
+    ],
+    demoUrl: "",
+    featured: true,
+  },
   {
     id: 1,
     title: "Educational Website",
@@ -203,13 +255,13 @@ export const projects: Project[] = [
     images: [
       "/jaweherkouloub1.png?height=300&width=500&text=Educational+Home",
       "/jaweherkouloub2.png?height=300&width=500&text=Interactive+Features",
-      "/jaweherkouloub3.png"
+      "/jaweherkouloub3.png",
     ],
 
     demoUrl: "https://tadaglobe.com/",
     featured: true,
   },
-   {
+  {
     id: 2,
     title: "Personal Portfolio",
     description: "Showcasing projects and skills",
@@ -221,7 +273,7 @@ export const projects: Project[] = [
       "/myportfolio1.png?height=300&width=500&text=Portfolio+Home",
       "/myportfolio2.png?height=300&width=500&text=Projects+Section",
       "/myportfolio3.png",
-      "/myportfolio4.png"
+      "/myportfolio4.png",
     ],
     demoUrl: "https://ammardalel.github.io/deploymentportfolio/",
     githubUrl: "https://github.com/AmmarDalel",
@@ -229,23 +281,6 @@ export const projects: Project[] = [
   },
   //Figma design
 
-    {
-    id: 3,
-    title: "Recycling app",
-    description: "Figma design",
-    longDescription:
-      "",
-    category: "Web Design",
-    technologies: ["Figma"],
-    images: [
-      "/recycling_app1.png",
-      "/recycling_app2.png",
-      "/recycling_app3.png",
-      "/recycling_app4.png",
-      "/recycling_app5.png"
-    ],
-    featured: false,
-  },
   {
     id: 3,
     title: "MERN Auth System",
@@ -253,10 +288,16 @@ export const projects: Project[] = [
     longDescription:
       "Built a full authentication system using MongoDB, Express.js, React.js, Node.js. Integrated Redux for state management, Passport.js, and JWT for secure authentication, with support for multiple roles (admin, user).",
     category: "Web Development",
-    technologies: ["MongoDB", "Express.js", "React.js", "Node.js", "Redux", "Passport.js", "JWT"],
-    images: [
-     "/MERN_Auth.png"
+    technologies: [
+      "MongoDB",
+      "Express.js",
+      "React.js",
+      "Node.js",
+      "Redux",
+      "Passport.js",
+      "JWT",
     ],
+    images: ["/MERN_Auth.png"],
     featured: false,
   },
   {
@@ -267,10 +308,8 @@ export const projects: Project[] = [
       "Created a showcase site for a travel agency featuring a dynamic and visually appealing landing page. UI design inspired by modern trends, implemented in React.js for client‑side interactivity.",
     category: "Web Design",
     technologies: ["React.js", "CSS", "JavaScript"],
-    images: [
-      "/flivan.png?height=300&width=500&text=Travel+Home",
-    ],
-    githubUrl:"https://github.com/AmmarDalel/flivain-React-js",
+    images: ["/flivan.png?height=300&width=500&text=Travel+Home"],
+    githubUrl: "https://github.com/AmmarDalel/flivain-React-js",
     featured: false,
   },
   {
@@ -281,10 +320,8 @@ export const projects: Project[] = [
       "A product management app featuring basic CRUD operations (Create, Read, Update, Delete), implemented with vanilla HTML, CSS, and JavaScript. Intuitive interface for administering product data.",
     category: "Web Development",
     technologies: ["HTML", "CSS", "JavaScript"],
-    images: [
-      "/cruds app.png?height=300&width=500&text=Product+List",
-    ],
-    githubUrl:"https://github.com/AmmarDalel/CRUDS_JS",
+    images: ["/cruds app.png?height=300&width=500&text=Product+List"],
+    githubUrl: "https://github.com/AmmarDalel/CRUDS_JS",
     featured: false,
   },
   {
@@ -294,7 +331,14 @@ export const projects: Project[] = [
     longDescription:
       "A web application for virtual meetings built with React.js, Node.js, Express.js (TypeScript), and MongoDB. It supports real-time communication via WebRTC and clean front‑end/back‑end architecture. Developed during my internship at Infinity Management.",
     category: "Web Development",
-    technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "TypeScript", "WebRTC"],
+    technologies: [
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "TypeScript",
+      "WebRTC",
+    ],
     images: [
       "/Meetapp2.png?height=300&width=500&text=Home+Page",
       "/Meetapp1.png?height=300&width=500&text=Meeting+Room",
@@ -303,55 +347,76 @@ export const projects: Project[] = [
       "/Meetapp5.png",
       "/Meetapp6.png",
     ],
-    
+
     featured: true,
   },
-  
 
- 
   {
-    id:7,
-    title:"AD Print App",
-    description:'',
-    longDescription:"",
-    category:"Web Design",
-    technologies:["React.js", "HTML", "CSS", "TypeScript"],
-     images: [
+    id: 7,
+    title: "AD Print App",
+    description: "",
+    longDescription: "",
+    category: "Web Design",
+    technologies: ["React.js", "HTML", "CSS", "TypeScript"],
+    images: [
       "/ADPrint1.png",
       "/ADPrint2.png",
-       "/ADPrint3.png",
+      "/ADPrint3.png",
       "/ADPrint4.png",
-       "/ADPrint5.png",
-      
+      "/ADPrint5.png",
     ],
     githubUrl: "https://github.com/AmmarDalel/ADprint/",
     featured: false,
-  }
-]
+  },
+  {
+    id: 8,
+    title: "Recycling app",
+    description: "Figma design",
+    longDescription: "",
+    category: "Web Design",
+    technologies: ["Figma"],
+    images: [
+      "/recycling_app1.png",
+      "/recycling_app2.png",
+      "/recycling_app3.png",
+      "/recycling_app4.png",
+      "/recycling_app5.png",
+    ],
+    featured: false,
+  },
+];
 
-export const categories = ["All", "Web Development", "Mobile App", "Design", "Web Design"]
+export const categories = [
+  "All",
+  "Web Development",
+  "Mobile App",
+  "Design",
+  "Web Design",
+];
 
-export const titleWhiteProjects : string = "My"
-export const titleOrangeProjects : string = "Projects"
+export const titleWhiteProjects: string = "My";
+export const titleOrangeProjects: string = "Projects";
 
-export const paragraphProjects : string ="Here's a showcase of my recent work, featuring web applications, mobile apps, and design projects that\
-        demonstrate my skills and creativity."
+export const paragraphProjects: string =
+  "Here's a showcase of my recent work, featuring web applications, mobile apps, and design projects that\
+        demonstrate my skills and creativity.";
 
-//footer 
+//footer
 export const quickLinks = [
-    { name: "About", href: "#about" },
-    { name: "Skills", href: "#skills" },
-    { name: "Projects", href: "#projects" },
-    { name: "Gallery", href: "#gallery" },
-  ]
+  { name: "About", href: "#about" },
+  { name: "Skills", href: "#skills" },
+  { name: "Projects", href: "#projects" },
+  { name: "Gallery", href: "#gallery" },
+];
 
 export const socialLinks = [
-    { name: "LinkedIn", href: "https://www.linkedin.com/in/dalel-ammar-b0544a234/" },
-    { name: "GitHub", href: "https://github.com/AmmarDalel" },
-    { name: "Instagram", href: "https://www.instagram.com/dalel.ammar/" },
-    { name: "Facebook", href: "https://www.facebook.com/dalel.ammar.961" },
+  {
+    name: "LinkedIn",
+    href: "https://www.linkedin.com/in/dalel-ammar-b0544a234/",
+  },
+  { name: "GitHub", href: "https://github.com/AmmarDalel" },
+  { name: "Instagram", href: "https://www.instagram.com/dalel.ammar/" },
+  { name: "Facebook", href: "https://www.facebook.com/dalel.ammar.961" },
+];
 
-  ]
-
-export const year : string = '2025'
-
+export const year: string = "2025";

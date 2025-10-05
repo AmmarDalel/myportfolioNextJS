@@ -72,7 +72,7 @@ export function Gallery() {
   const totalSlides = Math.ceil(events.length / itemsPerView)
 
   return (
-    <section className="py-20 px-6 bg-gray-800 text-white" id="gallery">
+    <section className="py-20 px-6 bg-gray-900 text-white" id="gallery">
       <div className="max-w-7xl mx-auto">
         <SectionHeader
           titleWhite={titleWhiteEvents}

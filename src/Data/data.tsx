@@ -242,27 +242,56 @@ export const projects: Project[] = [
       "/baniera15.png?height=300&width=500&text=Analytics",
     ],
     demoUrl: "",
+    githubUrl: "https://github.com/AmmarDalel/Baniera",
     featured: true,
   },
   {
     id: 1,
-    title: "Educational Website",
-    description: "Interactive e‑learning platform built freelance",
+    title: "To-Do List App",
+    description: "Modern full-stack to-do list web application",
     longDescription:
-      "Developed an interactive educational platform as a freelancer. Features include performance optimization, responsive design, and containerization with Docker. Tech stack: JavaScript, React.js, Node.js, Express.js, MySQL.",
+      "Developed a modern and responsive full-stack task management web application using Next.js (App Router) and TypeScript. The project includes user authentication with NextAuth, task CRUD operations, and a sleek UI built with Shadcn/UI. Data persistence and schema management are handled using PostgreSQL and Drizzle ORM, while tRPC ensures full end-to-end type safety and efficient API communication.\n\nThe architecture follows a clean and modular structure, separating concerns across features, components, hooks, services, and validation layers. This organization enhances maintainability, scalability, and developer experience.",
     category: "Web Development",
-    technologies: ["React.js", "Node.js", "Express.js", "MySQL", "Docker"],
-    images: [
-      "/jaweherkouloub1.png?height=300&width=500&text=Educational+Home",
-      "/jaweherkouloub2.png?height=300&width=500&text=Interactive+Features",
-      "/jaweherkouloub3.png",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "tRPC",
+      "PostgreSQL",
+      "Drizzle ORM",
+      "NextAuth.js",
+      "Shadcn/UI",
     ],
-
-    demoUrl: "https://tadaglobe.com/",
-    featured: true,
+    images: [
+      "/todolist1.png?height=300&width=500&text=Dashboard",
+      "/todolist2.png?height=300&width=500&text=Task+List",
+      "/todolist3.png?height=300&width=500&text=Add+Task+Modal",
+      "/todolist4.png?height=300&width=500&text=Authentication+Page",
+    ],
+    demoUrl: "https://todolist-nextjs.vercel.app/",
+    githubUrl: "https://github.com/AmmarDalel/TodoList_Nextjs",
+    featured: false,
   },
+
   {
     id: 2,
+    title: "ISIMM Website",
+    description: "Modern and responsive university web portal",
+    longDescription:
+      "Developed a modern and responsive web platform for ISIMM students and teachers. The project provides access to academic information, department details, and resources through an intuitive interface. Built with React.js, ensuring clean design and smooth navigation.",
+    category: "Web Development",
+    technologies: ["React.js"],
+    images: [
+      "/isimm5.png?height=300&width=500&text=Home+Page",
+      "/isimm1.png?height=300&width=500&text=Departments+Section",
+      "/isimm3.png?height=300&width=500&text=Student+Portal",
+      "/isimm4.png?height=300&width=500&text=Home+Page",
+      "/isimm2.png?height=300&width=500&text=Departments+Section",
+    ],
+    demoUrl: "https://isimm-website.vercel.app/",
+    featured: false,
+  },
+  {
+    id: 3,
     title: "Personal Portfolio",
     description: "Showcasing projects and skills",
     longDescription:
@@ -279,10 +308,25 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/AmmarDalel",
     featured: false,
   },
-  //Figma design
-
   {
-    id: 3,
+    id: 4,
+    title: "Educational Website",
+    description: "Interactive e‑learning platform built freelance",
+    longDescription:
+      "Developed an interactive educational platform as a freelancer. Features include performance optimization, responsive design, and containerization with Docker. Tech stack: JavaScript, React.js, Node.js, Express.js, MySQL.",
+    category: "Web Development",
+    technologies: ["React.js", "Node.js", "Express.js", "MySQL", "Docker"],
+    images: [
+      "/jaweherkouloub1.png?height=300&width=500&text=Educational+Home",
+      "/jaweherkouloub2.png?height=300&width=500&text=Interactive+Features",
+      "/jaweherkouloub3.png",
+    ],
+
+    demoUrl: "https://tadaglobe.com/",
+    featured: false,
+  },
+  {
+    id: 5,
     title: "MERN Auth System",
     description: "User & admin roles with JWT‑secure authentication",
     longDescription:
@@ -301,7 +345,7 @@ export const projects: Project[] = [
     featured: false,
   },
   {
-    id: 4,
+    id: 6,
     title: "Travel Agency Website",
     description: "Interactive landing page built with React.js",
     longDescription:
@@ -313,7 +357,7 @@ export const projects: Project[] = [
     featured: false,
   },
   {
-    id: 5,
+    id: 7,
     title: "Product CRUD App",
     description: "Simple product management system in JavaScript",
     longDescription:
@@ -325,7 +369,7 @@ export const projects: Project[] = [
     featured: false,
   },
   {
-    id: 6,
+    id: 8,
     title: "Virtual Meetings App",
     description: "Real‑time messaging and calls using WebRTC",
     longDescription:
@@ -352,7 +396,7 @@ export const projects: Project[] = [
   },
 
   {
-    id: 7,
+    id: 9,
     title: "AD Print App",
     description: "",
     longDescription: "",
@@ -368,22 +412,22 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/AmmarDalel/ADprint/",
     featured: false,
   },
-  {
-    id: 8,
-    title: "Recycling app",
-    description: "Figma design",
-    longDescription: "",
-    category: "Web Design",
-    technologies: ["Figma"],
-    images: [
-      "/recycling_app1.png",
-      "/recycling_app2.png",
-      "/recycling_app3.png",
-      "/recycling_app4.png",
-      "/recycling_app5.png",
-    ],
-    featured: false,
-  },
+  // {
+  //   id: 10,
+  //   title: "Recycling app",
+  //   description: "Figma design",
+  //   longDescription: "",
+  //   category: "Web Design",
+  //   technologies: ["Figma"],
+  //   images: [
+  //     "/recycling_app1.png",
+  //     "/recycling_app2.png",
+  //     "/recycling_app3.png",
+  //     "/recycling_app4.png",
+  //     "/recycling_app5.png",
+  //   ],
+  //   featured: false,
+  // },
 ];
 
 export const categories = [

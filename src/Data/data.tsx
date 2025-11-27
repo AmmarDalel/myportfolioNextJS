@@ -222,6 +222,11 @@ export const projects: Project[] = [
       "PostgreSQL",
       "Drizzle",
       "NextAuth.js",
+      "Shadcn/UI",
+      "tailwind css",
+      "React Hook Form",
+      "Zod",
+      "Zustand",
     ],
     images: [
       "/baniera8.png?height=300&width=500&text=Dashboard",
@@ -241,7 +246,8 @@ export const projects: Project[] = [
       "/baniera14.png?height=300&width=500&text=Analytics",
       "/baniera15.png?height=300&width=500&text=Analytics",
     ],
-    demoUrl: "",
+    demoUrl:
+      "https://drive.google.com/file/d/1up9VmWB81f5P8B6Sqn_-DLe4kSvz-nKE/view?usp=sharing",
     githubUrl: "https://github.com/AmmarDalel/Baniera",
     featured: true,
   },
@@ -260,6 +266,10 @@ export const projects: Project[] = [
       "Drizzle ORM",
       "NextAuth.js",
       "Shadcn/UI",
+      "tailwind css",
+      "React Hook Form",
+      "Zod",
+      "Zustand",
     ],
     images: [
       "/todolist1.png?height=300&width=500&text=Dashboard",

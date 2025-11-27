@@ -140,18 +140,20 @@ export const events: Event[] = [
   },
   {
     id: 2,
-    title: "Science Month Jury – ARSII & AMED",
-    date: "May 2025",
-    location: "AMED Sahloul School, Sousse",
+    title:
+      "The European Researchers’ Night 2025 – Event Organizer – ARSII Association",
+    date: "September-2025",
+    location: "INSAT, Tunis",
     description:
-      "Served as a jury member during the Science Festival. Evaluated projects in robotics and AI presented by young students. Celebrated innovation and promoted STEM education with ARSII and AMED.",
+      "Thrilled to help organize The European Researchers’ Night 2025 🌌 with ARSII at INSAT, Tunis. Engaged in workshops, exhibitions, and networking, highlighting the passion of researchers 🌍🔬🧠🤖. Grateful to be part of ARSII’s mission to bring science closer to society.",
     images: [
-      "/Amad_event1.jpg?height=300&width=400",
-      "/Amad_event2.jpg?height=300&width=400&text=Collaboration",
-      "/Amad_event3.jpg?height=300&width=400&text=Design Systems",
-      "/Amad_event4.jpg?height=300&width=400&text=Design Systems",
+      "/ERN1.jpg?height=300&width=400",
+      "/ERN2.jpg?height=300&width=400&text=Workshops",
+      "/ERN3.jpg?height=300&width=400&text=Exhibitions",
+      "/ERN4.jpg?height=300&width=400&text=Networking",
     ],
   },
+
   {
     id: 3,
     title: "IT Impact - Marketing Assistant – ARSII Club",
@@ -190,6 +192,20 @@ export const events: Event[] = [
     images: [
       "/cshack1.jpg?height=300&width=400",
       "/cshack2.jpg?height=300&width=400&text=Collaboration",
+    ],
+  },
+  {
+    id: 6,
+    title: "Science Month Jury – ARSII & AMED",
+    date: "May 2025",
+    location: "AMED Sahloul School, Sousse",
+    description:
+      "Served as a jury member during the Science Festival. Evaluated projects in robotics and AI presented by young students. Celebrated innovation and promoted STEM education with ARSII and AMED.",
+    images: [
+      "/Amad_event1.jpg?height=300&width=400",
+      "/Amad_event2.jpg?height=300&width=400&text=Collaboration",
+      "/Amad_event3.jpg?height=300&width=400&text=Design Systems",
+      "/Amad_event4.jpg?height=300&width=400&text=Design Systems",
     ],
   },
 ];

@@ -267,7 +267,7 @@ export const projects: Project[] = [
       "/todolist3.png?height=300&width=500&text=Add+Task+Modal",
       "/todolist4.png?height=300&width=500&text=Authentication+Page",
     ],
-    demoUrl: "https://todolist-nextjs.vercel.app/",
+    demoUrl: "https://todo-list-nextjs-green.vercel.app/",
     githubUrl: "https://github.com/AmmarDalel/TodoList_Nextjs",
     featured: false,
   },

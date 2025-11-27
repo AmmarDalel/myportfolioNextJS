@@ -287,7 +287,7 @@ export const projects: Project[] = [
       "/isimm4.png?height=300&width=500&text=Home+Page",
       "/isimm2.png?height=300&width=500&text=Departments+Section",
     ],
-    demoUrl: "https://isimm-website.vercel.app/",
+    demoUrl: "https://isimm-web-site.vercel.app/",
     featured: false,
   },
   {

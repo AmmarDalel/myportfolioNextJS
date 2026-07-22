@@ -1,24 +1,20 @@
 "use client";
 
 import { useState } from "react";
-import {
-  projects,
-  categories,
-  titleWhiteProjects,
-  titleOrangeProjects,
-  paragraphProjects,
-} from "@/Data/data";
+import { useTranslations } from "next-intl";
+import { projects, categories } from "@/Data/data";
 import { Button } from "@/components/ui/button";
 import ProjectCard from "./ProjectCard";
 import SectionHeader from "../SectionHeader";
 
 export default function Projects() {
-  const [selectedCategory, setSelectedCategory] = useState("All");
+  const t = useTranslations("Projects");
+  const [selectedCategory, setSelectedCategory] = useState<string>("all");
   const [showAll, setShowAll] = useState(false);
 
   const filteredProjects = projects.filter(
     (project) =>
-      selectedCategory === "All" || project.category === selectedCategory
+      selectedCategory === "all" || project.category === selectedCategory
   );
 
   const displayedProjects = showAll
@@ -29,9 +25,9 @@ export default function Projects() {
     <section className='py-20 px-6 bg-gray-900 text-white' id='projects'>
       <div className='max-w-7xl mx-auto'>
         <SectionHeader
-          titleWhite={titleWhiteProjects}
-          titleOrange={titleOrangeProjects}
-          paragraph={paragraphProjects}
+          titleWhite={t("titleWhite")}
+          titleOrange={t("titleOrange")}
+          paragraph={t("paragraph")}
         />
 
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12'>
@@ -49,8 +45,8 @@ export default function Projects() {
               className='border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white px-8 py-3'
             >
               {showAll
-                ? "Show Less"
-                : `Show All Projects (${filteredProjects.length})`}
+                ? t("showLess")
+                : t("showAllProjects", { count: filteredProjects.length })}
             </Button>
           </div>
         )}

@@ -1,9 +1,14 @@
+"use client"
+
+import { useTranslations } from "next-intl"
 import { Card, CardContent } from "@/components/ui/card"
 import { Calendar, MapPin } from "lucide-react"
 import EventImageSlider from "./EventImageSlider"
 import { Event } from "@/Data/data"
 
 export default function EventCard({ event }: { event: Event }) {
+  const t = useTranslations("Events")
+
   return (
     <Card className="bg-gray-900/50 border-gray-700 hover:border-orange-500/50 transition-all duration-300 hover:transform hover:scale-105 overflow-hidden">
       <EventImageSlider images={event.images} eventTitle={event.title} />
@@ -19,7 +24,9 @@ export default function EventCard({ event }: { event: Event }) {
             <span>{event.location}</span>
           </div>
         </div>
-        <p className="text-gray-300 text-sm leading-relaxed">{event.description}</p>
+        <p className="text-gray-300 text-sm leading-relaxed">
+          {t(`items.${event.id}.description`)}
+        </p>
       </CardContent>
     </Card>
   )

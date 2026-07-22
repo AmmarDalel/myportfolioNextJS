@@ -1,17 +1,19 @@
 import React from "react";
+import { getTranslations } from "next-intl/server";
 import ContactInfo from "./ContactInfo";
 import ActionButtons from "./ActionButtons";
-import { Aboutparagraphe, aboutTitle } from "@/Data/data";
 
-const ContentSection = () => {
+const ContentSection = async () => {
+  const t = await getTranslations("About");
+
   return (
     <div className="text-center lg:text-left">
       <h2 className="text-3xl lg:text-1xl xl:text-3xl font-bold mb-6 leading-tight">
-        {aboutTitle}
+        {t("title")}
       </h2>
 
       <p className="text-gray-400 text-lg mb-8 leading-relaxed">
-       {Aboutparagraphe}
+       {t("paragraph")}
       </p>
 
       <ContactInfo />

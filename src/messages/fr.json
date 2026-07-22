@@ -1,0 +1,155 @@
+{
+  "Metadata": {
+    "title": "Dalel Ammar",
+    "description": "Mon portfolio"
+  },
+  "Nav": {
+    "about": "À propos",
+    "gallery": "Galerie",
+    "skills": "Compétences",
+    "projects": "Projets",
+    "contacts": "Contact",
+    "letsTalk": "Discutons"
+  },
+  "About": {
+    "title": "À propos de moi",
+    "paragraph": "Je suis Dalel Ammar, une ingénieure logiciel passionnée par le développement web. J'aime créer des sites modernes, responsives et conviviaux. J'apprends en permanence et j'explore de nouvelles technologies pour concevoir des expériences numériques toujours plus intelligentes."
+  },
+  "Contact": {
+    "nameLabel": "Nom :",
+    "phoneLabel": "Téléphone :",
+    "emailLabel": "Email :"
+  },
+  "Buttons": {
+    "contactMe": "Me contacter",
+    "downloadResume": "Télécharger mon CV"
+  },
+  "Skills": {
+    "titleWhite": "Mes",
+    "titleOrange": "Compétences",
+    "items": {
+      "javascript": "Javascript",
+      "typescript": "Typescript",
+      "react": "React js",
+      "node": "Node js",
+      "express": "Express js",
+      "nest": "Nest js",
+      "next": "Next js",
+      "mobile": "Application Mobile",
+      "database": "BDD : MySQL, MongoDB",
+      "git": "Git, GitHub, GitLab",
+      "docker": "Docker",
+      "cloud": "Cloud Computing",
+      "figma": "Figma",
+      "problemSolving": "Résolution de problèmes"
+    }
+  },
+  "Events": {
+    "titleWhite": "Événements auxquels",
+    "titleOrange": "j'ai participé",
+    "paragraph": "Voici quelques-uns des événements, conférences et ateliers formidables auxquels j'ai participé, en partageant mes connaissances et en me connectant avec la communauté.",
+    "items": {
+      "1": {
+        "description": "Développement d'un système de surveillance intelligent pour détecter la violence à l'aide de YOLOv8, MediaPipe et de l'analyse de posture/mouvement. Travail en équipe formidable, avec présentation du projet lors de la TWISE Night."
+      },
+      "2": {
+        "description": "Ravie d'avoir contribué à l'organisation de La Nuit Européenne des Chercheurs 2025 🌌 avec ARSII à l'INSAT, Tunis. Participation à des ateliers, expositions et moments de networking, mettant en avant la passion des chercheurs 🌍🔬🧠🤖. Fière de faire partie de la mission d'ARSII visant à rapprocher la science de la société."
+      },
+      "3": {
+        "description": "Assistante marketing au sein du club ARSII de l'ISIMM. Pilotage des stratégies de communication, création de contenus visuels et contribution à l'événement IT Impact v1.0. Expérience pratique acquise en design graphique et en collaboration d'équipe."
+      },
+      "4": {
+        "description": "Formatrice lors de deux sessions de développement web avec le club ARSII ISIMM : les bases de HTML, CSS & JavaScript (29 janvier) et un mini-projet portfolio (1er février). Accompagnement des participants dans la création de leur premier site personnel."
+      },
+      "5": {
+        "description": "Participation à CSHack, organisé par le chapitre IEEE Computer Society de l'ISIMM. Ateliers sur la résolution de problèmes 💡 et la cybersécurité 🔒. Une occasion précieuse d'approfondir mes compétences et d'apprendre auprès d'experts."
+      },
+      "6": {
+        "description": "Membre du jury lors du Festival des Sciences. Évaluation de projets en robotique et en IA présentés par de jeunes élèves. Célébration de l'innovation et promotion de l'éducation STEM avec ARSII et AMED."
+      }
+    }
+  },
+  "Projects": {
+    "titleWhite": "Mes",
+    "titleOrange": "Projets",
+    "paragraph": "Voici une sélection de mes travaux récents, incluant des applications web, des applications mobiles et des projets de design qui illustrent mes compétences et ma créativité.",
+    "showAllProjects": "Voir tous les projets ({count})",
+    "showLess": "Voir moins",
+    "demo": "Démo",
+    "code": "Code",
+    "details": "Détails",
+    "featured": "En vedette",
+    "moreTech": "+{count} de plus",
+    "categories": {
+      "all": "Tous",
+      "webDevelopment": "Développement Web",
+      "mobileApp": "Application Mobile",
+      "design": "Design",
+      "webDesign": "Web Design"
+    },
+    "items": {
+      "0": {
+        "description": "Plateforme interactive de gestion et de visualisation de scènes 3D",
+        "longDescription": "EliteVerse est une plateforme web full-stack développée dans le cadre de mon projet de fin d'études en génie logiciel. Elle permet aux administrateurs, prestataires et visiteurs de gérer et d'explorer des scènes 3D immersives au sein d'un écosystème centralisé. La plateforme intègre une authentification sécurisée, un contrôle d'accès basé sur les rôles, la gestion des scènes et des catégories, les demandes de prestataires, un système de crédits et de paiements, des notifications en temps réel, ainsi qu'un assistant conversationnel basé sur l'IA.\n\nLe projet suit une architecture monorepo évolutive avec un backend NestJS, des frontends React/Next.js, une base de données PostgreSQL gérée avec Prisma ORM, Supabase Storage, Cloudinary pour la gestion des médias, ainsi qu'une intégration AWS S3. L'application met l'accent sur une architecture propre, la sécurité, la maintenabilité et la performance."
+      },
+      "1": {
+        "description": "Plateforme full-stack de gestion publicitaire",
+        "longDescription": "Développée durant mon stage, Baniera est une plateforme innovante pour la gestion et la diffusion centralisées de bannières et carrousels publicitaires. Elle permet aux annonceurs et gestionnaires de sites web de créer, planifier et diffuser leur contenu visuel avec un contrôle total. Les fonctionnalités clés incluent la gestion des clients, l'upload et le recadrage d'images, la planification via calendrier, la génération d'iframes pour l'intégration, un tableau de bord analytique avec des métriques clés (vues, clics), ainsi qu'un système de notifications et de facturation. L'architecture repose sur Next.js full-stack avec tRPC, Prisma et PostgreSQL, garantissant une sécurité de typage de bout en bout et des performances optimisées.\n\nLe code est bien structuré selon une architecture évolutive avec des dossiers dédiés : features (fonctionnalités métier), components (composants UI réutilisables), validation (schémas et règles de validation), services (logique métier), hooks (hooks React personnalisés) et utils (fonctions utilitaires). Cette structure améliore la maintenabilité, la lisibilité et la réutilisabilité du code."
+      },
+      "2": {
+        "description": "Application web full-stack moderne de gestion de tâches",
+        "longDescription": "Développement d'une application web full-stack moderne et responsive de gestion de tâches avec Next.js (App Router) et TypeScript. Le projet inclut l'authentification des utilisateurs avec NextAuth, les opérations CRUD sur les tâches, ainsi qu'une interface soignée construite avec Shadcn/UI. La persistance des données et la gestion du schéma sont assurées par PostgreSQL et Drizzle ORM, tandis que tRPC garantit une sécurité de typage de bout en bout et une communication API efficace.\n\nL'architecture suit une structure claire et modulaire, séparant les responsabilités entre features, components, hooks, services et validation. Cette organisation améliore la maintenabilité, l'évolutivité et l'expérience développeur."
+      },
+      "3": {
+        "description": "Portail web universitaire moderne et responsive",
+        "longDescription": "Développement d'une plateforme web moderne et responsive destinée aux étudiants et enseignants de l'ISIMM. Le projet donne accès aux informations académiques, aux détails des départements et aux ressources via une interface intuitive. Réalisée avec React.js, garantissant un design propre et une navigation fluide."
+      },
+      "4": {
+        "description": "Mise en valeur des projets et compétences",
+        "longDescription": "Développement de plusieurs sites portfolio personnels pour mettre en valeur mes projets, compétences et parcours. Réalisés avec React.js ou en HTML/CSS/JS natif, entièrement responsives et bien structurés."
+      },
+      "5": {
+        "description": "Plateforme e-learning interactive réalisée en freelance",
+        "longDescription": "Développement d'une plateforme éducative interactive en tant que freelance. Parmi les fonctionnalités : optimisation des performances, design responsive et conteneurisation avec Docker. Stack technique : JavaScript, React.js, Node.js, Express.js, MySQL."
+      },
+      "6": {
+        "description": "Rôles utilisateur et admin avec authentification sécurisée par JWT",
+        "longDescription": "Développement d'un système d'authentification complet avec MongoDB, Express.js, React.js et Node.js. Intégration de Redux pour la gestion d'état, de Passport.js et de JWT pour une authentification sécurisée, avec prise en charge de plusieurs rôles (admin, utilisateur)."
+      },
+      "7": {
+        "description": "Landing page interactive réalisée avec React.js",
+        "longDescription": "Création d'un site vitrine pour une agence de voyage, avec une landing page dynamique et visuellement attrayante. Design UI inspiré des tendances modernes, implémenté en React.js pour l'interactivité côté client."
+      },
+      "8": {
+        "description": "Système simple de gestion de produits en JavaScript",
+        "longDescription": "Application de gestion de produits proposant les opérations CRUD de base (Create, Read, Update, Delete), réalisée en HTML, CSS et JavaScript natifs. Interface intuitive pour administrer les données produits."
+      },
+      "9": {
+        "description": "Messagerie et appels en temps réel via WebRTC",
+        "longDescription": "Application web de réunions virtuelles développée avec React.js, Node.js, Express.js (TypeScript) et MongoDB. Elle prend en charge la communication en temps réel via WebRTC, avec une architecture front-end/back-end propre. Réalisée durant mon stage chez Infinity Management."
+      },
+      "10": {
+        "description": "",
+        "longDescription": ""
+      }
+    }
+  },
+  "ProjectDetail": {
+    "backToProjects": "Retour aux projets",
+    "overview": "Aperçu",
+    "technologies": "Technologies",
+    "viewLiveDemo": "Voir la démo en ligne",
+    "viewSourceCode": "Voir le code source",
+    "previous": "Précédent",
+    "next": "Suivant"
+  },
+  "ProjectNotFound": {
+    "title": "Projet introuvable",
+    "description": "Le projet que vous recherchez n'existe pas ou a peut-être été supprimé.",
+    "backButton": "Retour aux projets"
+  },
+  "Footer": {
+    "madeWith": "Réalisé avec",
+    "allRightsReserved": "Tous droits réservés."
+  }
+}

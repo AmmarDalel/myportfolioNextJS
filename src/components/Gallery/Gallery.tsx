@@ -1,13 +1,15 @@
 "use client"
 
 import { useState, useEffect, useRef } from "react"
+import { useTranslations } from "next-intl"
 import { Button } from "@/components/ui/button"
 import { ChevronLeft, ChevronRight } from "lucide-react"
-import { events, paragraphGallery, titleOrangeEvents, titleWhiteEvents } from "@/Data/data"
+import { events } from "@/Data/data"
 import SectionHeader from "../SectionHeader"
 import EventCard from "./EventCard"
 
 export function Gallery() {
+  const t = useTranslations("Events")
   const [currentIndex, setCurrentIndex] = useState(0)
   const [itemsPerView, setItemsPerView] = useState(3)
   const [isAutoPlaying, setIsAutoPlaying] = useState(true)
@@ -75,9 +77,9 @@ export function Gallery() {
     <section className="py-20 px-6 bg-gray-900 text-white" id="gallery">
       <div className="max-w-7xl mx-auto">
         <SectionHeader
-          titleWhite={titleWhiteEvents}
-          titleOrange={titleOrangeEvents}
-          paragraph={paragraphGallery}
+          titleWhite={t("titleWhite")}
+          titleOrange={t("titleOrange")}
+          paragraph={t("paragraph")}
         />
 
         <div

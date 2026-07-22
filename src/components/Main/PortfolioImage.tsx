@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { portfolioImageURL } from "@/Data/data";
+import { name, lastname, portfolioImageURL } from "@/Data/data";
 
 const ProfileImage = () => {
   return (
@@ -15,7 +15,7 @@ const ProfileImage = () => {
           <div className="w-full h-full rounded-full overflow-hidden border-4 border-orange-500">
             <Image
               src={portfolioImageURL}
-              alt="Saira Karim"
+              alt={`${name} ${lastname}`}
               width={400}
               height={400}
               className="w-full h-full object-cover"

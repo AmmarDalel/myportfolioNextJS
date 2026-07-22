@@ -9,7 +9,6 @@ import {
   RiNodejsLine,
   RiNextjsFill,
   RiDatabase2Fill,
-  RiGithubFill,
 } from "react-icons/ri";
 import {
   SiDocker,
@@ -20,12 +19,12 @@ import {
   SiNestjs,
 } from "react-icons/si";
 
-export const NavElements: string[] = [
-  "About",
-  "Gallery",
-  "Skills",
-  "Projects",
-  "Contacts",
+export const NavElements: { key: string; href: string }[] = [
+  { key: "about", href: "about" },
+  { key: "gallery", href: "gallery" },
+  { key: "skills", href: "skills" },
+  { key: "projects", href: "projects" },
+  { key: "contacts", href: "contacts" },
 ];
 export const name: string = "Dalel";
 export const lastname: string = "Ammar";
@@ -33,108 +32,88 @@ export const phoneNumber: string = "50 514 247";
 export const email: string = "ammardalel07@gmail.com";
 export const portfolioImageURL: string = "/dalel.jpeg";
 export const abreviation: string = "AD";
-export const aboutTitle: string = "About Me";
-export const Aboutparagraphe: string =
-  " I'm Dalel Ammar, a passionate software engineer with a strong interest in web development. \
-        I love creating modern, responsive, and user-friendly websites. \
-        I’m constantly learning and exploring new technologies to build better and smarter digital experiences.";
 
 interface Skill {
-  name: string;
+  id: string;
   percentage: number;
   icon: React.ReactElement;
 }
 
 export const skills: Skill[] = [
   {
-    name: "Javascript",
+    id: "javascript",
     percentage: 70,
     icon: <TbBrandJavascript color='orange' />,
   },
   {
-    name: "Typescript",
+    id: "typescript",
     percentage: 60,
     icon: <TbBrandTypescript color='orange' />,
   },
   {
-    name: "React js",
+    id: "react",
     percentage: 75,
     icon: <RiReactjsLine color='orange' />,
   },
   {
-    name: "Node js",
+    id: "node",
     percentage: 60,
     icon: <RiNodejsLine color='orange' />,
   },
   {
-    name: "Express js",
+    id: "express",
     percentage: 60,
     icon: <SiExpress color='orange' />,
   },
   {
-    name: "Nest js",
+    id: "nest",
     percentage: 50,
     icon: <SiNestjs color='orange' />,
   },
   {
-    name: "Next js",
+    id: "next",
     percentage: 30,
     icon: <RiNextjsFill color='orange' />,
   },
   {
-    name: "Mobile App",
-    percentage: 30,
-    icon: <TbDeviceMobile color='orange' />,
-  },
-  {
-    name: "DB : Mysql , MongoDB",
+    id: "database",
     percentage: 60,
     icon: <RiDatabase2Fill color='orange' />,
   },
   {
-    name: "Git , GitHub , GitLab",
+    id: "git",
     percentage: 50,
     icon: <SiGit color='orange' />,
   },
   {
-    name: "Docker",
+    id: "docker",
     percentage: 40,
     icon: <SiDocker color='orange' />,
   },
   {
-    name: "Cloud Computing",
+    id: "cloud",
     percentage: 20,
     icon: <TbCloudComputing color='orange' />,
   },
   {
-    name: "Figma",
+    id: "figma",
     percentage: 20,
     icon: <SiFigma color='orange' />,
   },
   {
-    name: "Problem Solving",
+    id: "problemSolving",
     percentage: 70,
     icon: <SiMinds color='orange' />,
   },
 ];
 
-export const titleWhiteSkills: string = "My";
-export const titleOrangeSkills: string = "Skills";
 export interface Event {
   id: number;
   title: string;
   date: string;
   location: string;
-  description: string;
   images: string[];
 }
-
-export const paragraphGallery: string =
-  " Here are some of the amazing events, conferences,\
-                                      and workshops I've been part of, sharing knowledge and\
-                                      connecting with the community.";
-export const titleWhiteEvents: string = "Events I've";
-export const titleOrangeEvents: string = "Participated";
 
 export const events: Event[] = [
   {
@@ -142,8 +121,6 @@ export const events: Event[] = [
     title: "Violence Detection System – TWISE Night",
     date: "2025",
     location: "ISIMM, Monastir",
-    description:
-      "Developed a smart surveillance system to detect violence using YOLOv8, MediaPipe, and posture/movement analysis. Worked with a fantastic team and presented the project at TWISE Night.",
     images: [
       "Twise_night1.jpg?height=300&width=400",
       "Twise_night2.jpg?height=300&width=400&text=Collaboration",
@@ -156,8 +133,6 @@ export const events: Event[] = [
       "The European Researchers’ Night 2025 – Event Organizer – ARSII Association",
     date: "September-2025",
     location: "INSAT, Tunis",
-    description:
-      "Thrilled to help organize The European Researchers’ Night 2025 🌌 with ARSII at INSAT, Tunis. Engaged in workshops, exhibitions, and networking, highlighting the passion of researchers 🌍🔬🧠🤖. Grateful to be part of ARSII’s mission to bring science closer to society.",
     images: [
       "/ERN1.jpg?height=300&width=400",
       "/ERN2.jpg?height=300&width=400&text=Workshops",
@@ -171,8 +146,6 @@ export const events: Event[] = [
     title: "IT Impact - Marketing Assistant – ARSII Club",
     date: "April-2025",
     location: "ISIMM, Monastir",
-    description:
-      "Worked as Marketing Assistant at ARSII Club ISIMM. Led communication strategies, created visual content, and contributed to IT Impact v1.0 event. Gained hands-on experience in graphic design and team collaboration.",
     images: [
       "/It_Impact1.jpg?height=300&width=400",
       "/It_Impact2.jpg?height=300&width=400&text=Collaboration",
@@ -187,8 +160,6 @@ export const events: Event[] = [
     title: "Web Dev Training – ARSII Club",
     date: "Jan–Feb 2025",
     location: "ISIMM, Monastir",
-    description:
-      "Trainer at two web development sessions with ARSII Club ISIMM: Basics of HTML, CSS & JavaScript (Jan 29) and Portfolio mini-project (Feb 1). Helped participants build their first personal websites.",
     images: [
       "/dev_session1.jpg?height=300&width=400",
       "/dev_session2.jpg?height=300&width=400&text=Collaboration",
@@ -199,8 +170,6 @@ export const events: Event[] = [
     title: "CSHack 2024 – IEEE ISIMM",
     date: "March 2024",
     location: "ISIMM, Monastir",
-    description:
-      "Participated in CSHack, organized by IEEE Computer Society Chapter – ISIMM. Attended workshops on problem solving 💡 and cyber security 🔒. A valuable opportunity to deepen my skills and learn alongside experts.",
     images: [
       "/cshack1.jpg?height=300&width=400",
       "/cshack2.jpg?height=300&width=400&text=Collaboration",
@@ -211,8 +180,6 @@ export const events: Event[] = [
     title: "Science Month Jury – ARSII & AMED",
     date: "May 2025",
     location: "AMED Sahloul School, Sousse",
-    description:
-      "Served as a jury member during the Science Festival. Evaluated projects in robotics and AI presented by young students. Celebrated innovation and promoted STEM education with ARSII and AMED.",
     images: [
       "/Amad_event1.jpg?height=300&width=400",
       "/Amad_event2.jpg?height=300&width=400&text=Collaboration",
@@ -225,9 +192,7 @@ export const events: Event[] = [
 export interface Project {
   id: number;
   title: string;
-  description: string;
-  longDescription: string;
-  category: string;
+  category: "webDevelopment" | "webDesign";
   technologies: string[];
   images: string[];
   demoUrl?: string;
@@ -239,10 +204,7 @@ export const projects: Project[] = [
   {
     id: 0,
     title: "EliteVerse Platform",
-    description: "Interactive 3D scene management and visualization platform",
-    longDescription:
-      "EliteVerse is a full-stack web platform developed as my Software Engineering graduation project. It enables administrators, providers, and visitors to manage and explore immersive 3D scenes through a centralized ecosystem. The platform includes secure authentication, role-based access control, scene and category management, provider requests, credits and payments, real-time notifications, and an AI-powered conversational assistant.\n\nThe project follows a scalable monorepo architecture with a NestJS backend, React/Next.js frontends, PostgreSQL database managed with Prisma ORM, Supabase Storage, Cloudinary for media management, and AWS S3 integration. The application emphasizes clean architecture, security, maintainability, and high performance.",
-    category: "Web Development",
+    category: "webDevelopment",
     technologies: [
       "NestJS",
       "React.js",
@@ -278,10 +240,7 @@ export const projects: Project[] = [
   {
     id: 1,
     title: "Baniera Platform",
-    description: "Full-stack advertising management platform",
-    longDescription:
-      "Developed during my internship, Baniera is an innovative platform for centralized management and distribution of advertising banners and carousels. It allows advertisers and website managers to create, schedule, and deliver their visual content with full control. Key features include client management, image upload and cropping, scheduling with calendar, iframe generation for integration, an analytics dashboard with key metrics (views, clicks), as well as a notification and billing system. The architecture is built on Next.js full-stack with tRPC, Prisma, and PostgreSQL, ensuring end-to-end type safety and optimized performance.\n\nThe codebase is well-structured following a scalable architecture with dedicated folders: features (business features), components (reusable UI components), validation (schemas and validation rules), services (business logic), hooks (custom React hooks), and utils (utility functions). This structure improves maintainability, readability, and code reusability.",
-    category: "Web Development",
+    category: "webDevelopment",
     technologies: [
       "Next.js",
       "React.js",
@@ -321,10 +280,7 @@ export const projects: Project[] = [
   {
     id: 2,
     title: "To-Do List App",
-    description: "Modern full-stack to-do list web application",
-    longDescription:
-      "Developed a modern and responsive full-stack task management web application using Next.js (App Router) and TypeScript. The project includes user authentication with NextAuth, task CRUD operations, and a sleek UI built with Shadcn/UI. Data persistence and schema management are handled using PostgreSQL and Drizzle ORM, while tRPC ensures full end-to-end type safety and efficient API communication.\n\nThe architecture follows a clean and modular structure, separating concerns across features, components, hooks, services, and validation layers. This organization enhances maintainability, scalability, and developer experience.",
-    category: "Web Development",
+    category: "webDevelopment",
     technologies: [
       "Next.js",
       "TypeScript",
@@ -352,10 +308,7 @@ export const projects: Project[] = [
   {
     id: 3,
     title: "ISIMM Website",
-    description: "Modern and responsive university web portal",
-    longDescription:
-      "Developed a modern and responsive web platform for ISIMM students and teachers. The project provides access to academic information, department details, and resources through an intuitive interface. Built with React.js, ensuring clean design and smooth navigation.",
-    category: "Web Development",
+    category: "webDevelopment",
     technologies: ["React.js"],
     images: [
       "/isimm5.png?height=300&width=500&text=Home+Page",
@@ -370,10 +323,7 @@ export const projects: Project[] = [
   {
     id: 4,
     title: "Personal Portfolio",
-    description: "Showcasing projects and skills",
-    longDescription:
-      "Developed several personal portfolio sites to highlight projects, skills, and background. Built with React.js or plain HTML/CSS/JS, fully responsive and well‑structured.",
-    category: "Web Design",
+    category: "webDesign",
     technologies: ["React.js", "HTML", "CSS", "JavaScript"],
     images: [
       "/myportfolio1.png?height=300&width=500&text=Portfolio+Home",
@@ -388,10 +338,7 @@ export const projects: Project[] = [
   {
     id: 5,
     title: "Educational Website",
-    description: "Interactive e‑learning platform built freelance",
-    longDescription:
-      "Developed an interactive educational platform as a freelancer. Features include performance optimization, responsive design, and containerization with Docker. Tech stack: JavaScript, React.js, Node.js, Express.js, MySQL.",
-    category: "Web Development",
+    category: "webDevelopment",
     technologies: ["React.js", "Node.js", "Express.js", "MySQL", "Docker"],
     images: [
       "/jaweherkouloub1.png?height=300&width=500&text=Educational+Home",
@@ -405,10 +352,7 @@ export const projects: Project[] = [
   {
     id: 6,
     title: "MERN Auth System",
-    description: "User & admin roles with JWT‑secure authentication",
-    longDescription:
-      "Built a full authentication system using MongoDB, Express.js, React.js, Node.js. Integrated Redux for state management, Passport.js, and JWT for secure authentication, with support for multiple roles (admin, user).",
-    category: "Web Development",
+    category: "webDevelopment",
     technologies: [
       "MongoDB",
       "Express.js",
@@ -424,10 +368,7 @@ export const projects: Project[] = [
   {
     id: 7,
     title: "Travel Agency Website",
-    description: "Interactive landing page built with React.js",
-    longDescription:
-      "Created a showcase site for a travel agency featuring a dynamic and visually appealing landing page. UI design inspired by modern trends, implemented in React.js for client‑side interactivity.",
-    category: "Web Design",
+    category: "webDesign",
     technologies: ["React.js", "CSS", "JavaScript"],
     images: ["/flivan.png?height=300&width=500&text=Travel+Home"],
     githubUrl: "https://github.com/AmmarDalel/flivain-React-js",
@@ -436,10 +377,7 @@ export const projects: Project[] = [
   {
     id: 8,
     title: "Product CRUD App",
-    description: "Simple product management system in JavaScript",
-    longDescription:
-      "A product management app featuring basic CRUD operations (Create, Read, Update, Delete), implemented with vanilla HTML, CSS, and JavaScript. Intuitive interface for administering product data.",
-    category: "Web Development",
+    category: "webDevelopment",
     technologies: ["HTML", "CSS", "JavaScript"],
     images: ["/cruds app.png?height=300&width=500&text=Product+List"],
     githubUrl: "https://github.com/AmmarDalel/CRUDS_JS",
@@ -448,10 +386,7 @@ export const projects: Project[] = [
   {
     id: 9,
     title: "Virtual Meetings App",
-    description: "Real‑time messaging and calls using WebRTC",
-    longDescription:
-      "A web application for virtual meetings built with React.js, Node.js, Express.js (TypeScript), and MongoDB. It supports real-time communication via WebRTC and clean front‑end/back‑end architecture. Developed during my internship at Infinity Management.",
-    category: "Web Development",
+    category: "webDevelopment",
     technologies: [
       "React.js",
       "Node.js",
@@ -475,9 +410,7 @@ export const projects: Project[] = [
   {
     id: 10,
     title: "AD Print App",
-    description: "",
-    longDescription: "",
-    category: "Web Design",
+    category: "webDesign",
     technologies: ["React.js", "HTML", "CSS", "TypeScript"],
     images: [
       "/ADPrint1.png",
@@ -492,26 +425,21 @@ export const projects: Project[] = [
 ];
 
 export const categories = [
-  "All",
-  "Web Development",
-  "Mobile App",
-  "Design",
-  "Web Design",
-];
+  "all",
+  "webDevelopment",
+  "mobileApp",
+  "design",
+  "webDesign",
+] as const;
 
-export const titleWhiteProjects: string = "My";
-export const titleOrangeProjects: string = "Projects";
-
-export const paragraphProjects: string =
-  "Here's a showcase of my recent work, featuring web applications, mobile apps, and design projects that\
-        demonstrate my skills and creativity.";
+export type ProjectCategory = (typeof categories)[number];
 
 //footer
 export const quickLinks = [
-  { name: "About", href: "#about" },
-  { name: "Skills", href: "#skills" },
-  { name: "Projects", href: "#projects" },
-  { name: "Gallery", href: "#gallery" },
+  { key: "about", href: "#about" },
+  { key: "skills", href: "#skills" },
+  { key: "projects", href: "#projects" },
+  { key: "gallery", href: "#gallery" },
 ];
 
 export const socialLinks = [

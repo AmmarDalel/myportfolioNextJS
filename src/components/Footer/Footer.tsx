@@ -1,8 +1,11 @@
 import { lastname, name, quickLinks, socialLinks, year } from "@/Data/data"
+import { getTranslations } from "next-intl/server"
 import { Heart } from "lucide-react"
 import Logo from "../Logo"
 
-export function Footer() {
+export async function Footer() {
+  const t = await getTranslations("Nav")
+  const tFooter = await getTranslations("Footer")
 
   return (
     <footer className="bg-gray-900 text-white">
@@ -13,13 +16,13 @@ export function Footer() {
 
           {/* Navigation Links */}
           <div className="flex flex-wrap justify-center gap-6">
-            {quickLinks.map((link, index) => (
+            {quickLinks.map((link) => (
               <a
-                key={index}
+                key={link.key}
                 href={link.href}
                 className="text-gray-400 hover:text-orange-500 transition-colors duration-200 text-sm"
               >
-                {link.name}
+                {t(link.key)}
               </a>
             ))}
           </div>
@@ -43,9 +46,9 @@ export function Footer() {
         {/* Divider */}
         <div className="border-t border-gray-800 mt-8 pt-6">
           <div className="flex items-center justify-center gap-1 text-sm text-gray-400">
-            <span>© {year} {name}  {lastname} . Made with</span>
+            <span>© {year} {name} {lastname} . {tFooter("madeWith")}</span>
             <Heart className="w-4 h-4 text-red-500 fill-current" />
-            <span>All rights reserved.</span>
+            <span>{tFooter("allRightsReserved")}</span>
           </div>
         </div>
       </div>

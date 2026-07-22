@@ -1,0 +1,155 @@
+{
+  "Metadata": {
+    "title": "Dalel Ammar",
+    "description": "My portfolio"
+  },
+  "Nav": {
+    "about": "About",
+    "gallery": "Gallery",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contacts": "Contacts",
+    "letsTalk": "Let's Talk"
+  },
+  "About": {
+    "title": "About Me",
+    "paragraph": "I'm Dalel Ammar, a passionate software engineer with a strong interest in web development. I love creating modern, responsive, and user-friendly websites. I'm constantly learning and exploring new technologies to build better and smarter digital experiences."
+  },
+  "Contact": {
+    "nameLabel": "Name:",
+    "phoneLabel": "Phone:",
+    "emailLabel": "Email:"
+  },
+  "Buttons": {
+    "contactMe": "Contact me",
+    "downloadResume": "Download my resume"
+  },
+  "Skills": {
+    "titleWhite": "My",
+    "titleOrange": "Skills",
+    "items": {
+      "javascript": "Javascript",
+      "typescript": "Typescript",
+      "react": "React js",
+      "node": "Node js",
+      "express": "Express js",
+      "nest": "Nest js",
+      "next": "Next js",
+      "mobile": "Mobile App",
+      "database": "DB : Mysql , MongoDB",
+      "git": "Git , GitHub , GitLab",
+      "docker": "Docker",
+      "cloud": "Cloud Computing",
+      "figma": "Figma",
+      "problemSolving": "Problem Solving"
+    }
+  },
+  "Events": {
+    "titleWhite": "Events I've",
+    "titleOrange": "Participated",
+    "paragraph": "Here are some of the amazing events, conferences, and workshops I've been part of, sharing knowledge and connecting with the community.",
+    "items": {
+      "1": {
+        "description": "Developed a smart surveillance system to detect violence using YOLOv8, MediaPipe, and posture/movement analysis. Worked with a fantastic team and presented the project at TWISE Night."
+      },
+      "2": {
+        "description": "Thrilled to help organize The European Researchers' Night 2025 🌌 with ARSII at INSAT, Tunis. Engaged in workshops, exhibitions, and networking, highlighting the passion of researchers 🌍🔬🧠🤖. Grateful to be part of ARSII's mission to bring science closer to society."
+      },
+      "3": {
+        "description": "Worked as Marketing Assistant at ARSII Club ISIMM. Led communication strategies, created visual content, and contributed to IT Impact v1.0 event. Gained hands-on experience in graphic design and team collaboration."
+      },
+      "4": {
+        "description": "Trainer at two web development sessions with ARSII Club ISIMM: Basics of HTML, CSS & JavaScript (Jan 29) and Portfolio mini-project (Feb 1). Helped participants build their first personal websites."
+      },
+      "5": {
+        "description": "Participated in CSHack, organized by IEEE Computer Society Chapter – ISIMM. Attended workshops on problem solving 💡 and cyber security 🔒. A valuable opportunity to deepen my skills and learn alongside experts."
+      },
+      "6": {
+        "description": "Served as a jury member during the Science Festival. Evaluated projects in robotics and AI presented by young students. Celebrated innovation and promoted STEM education with ARSII and AMED."
+      }
+    }
+  },
+  "Projects": {
+    "titleWhite": "My",
+    "titleOrange": "Projects",
+    "paragraph": "Here's a showcase of my recent work, featuring web applications, mobile apps, and design projects that demonstrate my skills and creativity.",
+    "showAllProjects": "Show All Projects ({count})",
+    "showLess": "Show Less",
+    "demo": "Demo",
+    "code": "Code",
+    "details": "Details",
+    "featured": "Featured",
+    "moreTech": "+{count} more",
+    "categories": {
+      "all": "All",
+      "webDevelopment": "Web Development",
+      "mobileApp": "Mobile App",
+      "design": "Design",
+      "webDesign": "Web Design"
+    },
+    "items": {
+      "0": {
+        "description": "Interactive 3D scene management and visualization platform",
+        "longDescription": "EliteVerse is a full-stack web platform developed as my Software Engineering graduation project. It enables administrators, providers, and visitors to manage and explore immersive 3D scenes through a centralized ecosystem. The platform includes secure authentication, role-based access control, scene and category management, provider requests, credits and payments, real-time notifications, and an AI-powered conversational assistant.\n\nThe project follows a scalable monorepo architecture with a NestJS backend, React/Next.js frontends, PostgreSQL database managed with Prisma ORM, Supabase Storage, Cloudinary for media management, and AWS S3 integration. The application emphasizes clean architecture, security, maintainability, and high performance."
+      },
+      "1": {
+        "description": "Full-stack advertising management platform",
+        "longDescription": "Developed during my internship, Baniera is an innovative platform for centralized management and distribution of advertising banners and carousels. It allows advertisers and website managers to create, schedule, and deliver their visual content with full control. Key features include client management, image upload and cropping, scheduling with calendar, iframe generation for integration, an analytics dashboard with key metrics (views, clicks), as well as a notification and billing system. The architecture is built on Next.js full-stack with tRPC, Prisma, and PostgreSQL, ensuring end-to-end type safety and optimized performance.\n\nThe codebase is well-structured following a scalable architecture with dedicated folders: features (business features), components (reusable UI components), validation (schemas and validation rules), services (business logic), hooks (custom React hooks), and utils (utility functions). This structure improves maintainability, readability, and code reusability."
+      },
+      "2": {
+        "description": "Modern full-stack to-do list web application",
+        "longDescription": "Developed a modern and responsive full-stack task management web application using Next.js (App Router) and TypeScript. The project includes user authentication with NextAuth, task CRUD operations, and a sleek UI built with Shadcn/UI. Data persistence and schema management are handled using PostgreSQL and Drizzle ORM, while tRPC ensures full end-to-end type safety and efficient API communication.\n\nThe architecture follows a clean and modular structure, separating concerns across features, components, hooks, services, and validation layers. This organization enhances maintainability, scalability, and developer experience."
+      },
+      "3": {
+        "description": "Modern and responsive university web portal",
+        "longDescription": "Developed a modern and responsive web platform for ISIMM students and teachers. The project provides access to academic information, department details, and resources through an intuitive interface. Built with React.js, ensuring clean design and smooth navigation."
+      },
+      "4": {
+        "description": "Showcasing projects and skills",
+        "longDescription": "Developed several personal portfolio sites to highlight projects, skills, and background. Built with React.js or plain HTML/CSS/JS, fully responsive and well‑structured."
+      },
+      "5": {
+        "description": "Interactive e‑learning platform built freelance",
+        "longDescription": "Developed an interactive educational platform as a freelancer. Features include performance optimization, responsive design, and containerization with Docker. Tech stack: JavaScript, React.js, Node.js, Express.js, MySQL."
+      },
+      "6": {
+        "description": "User & admin roles with JWT‑secure authentication",
+        "longDescription": "Built a full authentication system using MongoDB, Express.js, React.js, Node.js. Integrated Redux for state management, Passport.js, and JWT for secure authentication, with support for multiple roles (admin, user)."
+      },
+      "7": {
+        "description": "Interactive landing page built with React.js",
+        "longDescription": "Created a showcase site for a travel agency featuring a dynamic and visually appealing landing page. UI design inspired by modern trends, implemented in React.js for client‑side interactivity."
+      },
+      "8": {
+        "description": "Simple product management system in JavaScript",
+        "longDescription": "A product management app featuring basic CRUD operations (Create, Read, Update, Delete), implemented with vanilla HTML, CSS, and JavaScript. Intuitive interface for administering product data."
+      },
+      "9": {
+        "description": "Real‑time messaging and calls using WebRTC",
+        "longDescription": "A web application for virtual meetings built with React.js, Node.js, Express.js (TypeScript), and MongoDB. It supports real-time communication via WebRTC and clean front‑end/back‑end architecture. Developed during my internship at Infinity Management."
+      },
+      "10": {
+        "description": "",
+        "longDescription": ""
+      }
+    }
+  },
+  "ProjectDetail": {
+    "backToProjects": "Back to Projects",
+    "overview": "Overview",
+    "technologies": "Technologies",
+    "viewLiveDemo": "View Live Demo",
+    "viewSourceCode": "View Source Code",
+    "previous": "Previous",
+    "next": "Next"
+  },
+  "ProjectNotFound": {
+    "title": "Project not found",
+    "description": "The project you're looking for doesn't exist or may have been removed.",
+    "backButton": "Back to Projects"
+  },
+  "Footer": {
+    "madeWith": "Made with",
+    "allRightsReserved": "All rights reserved."
+  }
+}

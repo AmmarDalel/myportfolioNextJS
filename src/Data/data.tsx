@@ -35,7 +35,7 @@ export const portfolioImageURL: string = "/dalel.jpeg";
 export const abreviation: string = "AD";
 export const aboutTitle: string = "About Me";
 export const Aboutparagraphe: string =
-  " I'm Dalel Ammar, a passionate software engineering student with a strong interest in web development. \
+  " I'm Dalel Ammar, a passionate software engineer with a strong interest in web development. \
         I love creating modern, responsive, and user-friendly websites. \
         I’m constantly learning and exploring new technologies to build better and smarter digital experiences.";
 

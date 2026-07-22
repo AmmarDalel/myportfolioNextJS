@@ -11,7 +11,14 @@ import {
   RiDatabase2Fill,
   RiGithubFill,
 } from "react-icons/ri";
-import { SiDocker, SiExpress, SiFigma, SiMinds } from "react-icons/si";
+import {
+  SiDocker,
+  SiExpress,
+  SiFigma,
+  SiGit,
+  SiMinds,
+  SiNestjs,
+} from "react-icons/si";
 
 export const NavElements: string[] = [
   "About",
@@ -65,6 +72,11 @@ export const skills: Skill[] = [
     icon: <SiExpress color='orange' />,
   },
   {
+    name: "Nest js",
+    percentage: 50,
+    icon: <SiNestjs color='orange' />,
+  },
+  {
     name: "Next js",
     percentage: 30,
     icon: <RiNextjsFill color='orange' />,
@@ -80,9 +92,9 @@ export const skills: Skill[] = [
     icon: <RiDatabase2Fill color='orange' />,
   },
   {
-    name: "Git , GitHub",
+    name: "Git , GitHub , GitLab",
     percentage: 50,
-    icon: <RiGithubFill color='orange' />,
+    icon: <SiGit color='orange' />,
   },
   {
     name: "Docker",
@@ -226,6 +238,45 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: 0,
+    title: "EliteVerse Platform",
+    description: "Interactive 3D scene management and visualization platform",
+    longDescription:
+      "EliteVerse is a full-stack web platform developed as my Software Engineering graduation project. It enables administrators, providers, and visitors to manage and explore immersive 3D scenes through a centralized ecosystem. The platform includes secure authentication, role-based access control, scene and category management, provider requests, credits and payments, real-time notifications, and an AI-powered conversational assistant.\n\nThe project follows a scalable monorepo architecture with a NestJS backend, React/Next.js frontends, PostgreSQL database managed with Prisma ORM, Supabase Storage, Cloudinary for media management, and AWS S3 integration. The application emphasizes clean architecture, security, maintainability, and high performance.",
+    category: "Web Development",
+    technologies: [
+      "NestJS",
+      "React.js",
+      "Next.js",
+      "TypeScript",
+      "PostgreSQL",
+      "Prisma ORM",
+      "Supabase",
+      "JWT",
+      "Tailwind CSS",
+      "Shadcn/UI",
+      "AWS S3",
+      "Cloudinary",
+      "Groq AI",
+    ],
+    images: [
+      "/eliteverse1.png",
+      "/eliteverse2.png",
+      "/eliteverse3.png",
+      "/eliteverse4.png",
+      "/eliteverse5.png",
+      "/eliteverse6.png",
+      "/eliteverse7.png",
+      "/eliteverse8.png",
+      "/eliteverse9.png",
+      "/eliteverse10.png",
+    ],
+    demoUrl:
+      "https://drive.google.com/file/d/1u2MWaJ5sWg0U9rdk_hs-w_eoJA4Xki9t/view?usp=sharing",
+    githubUrl: "",
+    featured: true,
+  },
+  {
+    id: 1,
     title: "Baniera Platform",
     description: "Full-stack advertising management platform",
     longDescription:
@@ -268,7 +319,7 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    id: 1,
+    id: 2,
     title: "To-Do List App",
     description: "Modern full-stack to-do list web application",
     longDescription:
@@ -299,7 +350,7 @@ export const projects: Project[] = [
   },
 
   {
-    id: 2,
+    id: 3,
     title: "ISIMM Website",
     description: "Modern and responsive university web portal",
     longDescription:
@@ -317,7 +368,7 @@ export const projects: Project[] = [
     featured: false,
   },
   {
-    id: 3,
+    id: 4,
     title: "Personal Portfolio",
     description: "Showcasing projects and skills",
     longDescription:
@@ -335,7 +386,7 @@ export const projects: Project[] = [
     featured: false,
   },
   {
-    id: 4,
+    id: 5,
     title: "Educational Website",
     description: "Interactive e‑learning platform built freelance",
     longDescription:
@@ -352,7 +403,7 @@ export const projects: Project[] = [
     featured: false,
   },
   {
-    id: 5,
+    id: 6,
     title: "MERN Auth System",
     description: "User & admin roles with JWT‑secure authentication",
     longDescription:
@@ -371,7 +422,7 @@ export const projects: Project[] = [
     featured: false,
   },
   {
-    id: 6,
+    id: 7,
     title: "Travel Agency Website",
     description: "Interactive landing page built with React.js",
     longDescription:
@@ -383,7 +434,7 @@ export const projects: Project[] = [
     featured: false,
   },
   {
-    id: 7,
+    id: 8,
     title: "Product CRUD App",
     description: "Simple product management system in JavaScript",
     longDescription:
@@ -395,7 +446,7 @@ export const projects: Project[] = [
     featured: false,
   },
   {
-    id: 8,
+    id: 9,
     title: "Virtual Meetings App",
     description: "Real‑time messaging and calls using WebRTC",
     longDescription:
@@ -422,7 +473,7 @@ export const projects: Project[] = [
   },
 
   {
-    id: 9,
+    id: 10,
     title: "AD Print App",
     description: "",
     longDescription: "",
@@ -438,22 +489,6 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/AmmarDalel/ADprint/",
     featured: false,
   },
-  // {
-  //   id: 10,
-  //   title: "Recycling app",
-  //   description: "Figma design",
-  //   longDescription: "",
-  //   category: "Web Design",
-  //   technologies: ["Figma"],
-  //   images: [
-  //     "/recycling_app1.png",
-  //     "/recycling_app2.png",
-  //     "/recycling_app3.png",
-  //     "/recycling_app4.png",
-  //     "/recycling_app5.png",
-  //   ],
-  //   featured: false,
-  // },
 ];
 
 export const categories = [

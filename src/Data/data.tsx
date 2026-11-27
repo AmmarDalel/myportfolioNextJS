@@ -30,7 +30,7 @@ export const name: string = "Dalel";
 export const lastname: string = "Ammar";
 export const phoneNumber: string = "50 514 247";
 export const email: string = "ammardalel07@gmail.com";
-export const portfolioImageURL: string = "/dalel.jpeg";
+export const portfolioImageURL: string = "/dalel.jpg";
 export const abreviation: string = "AD";
 
 interface Skill {
